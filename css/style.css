@@ -1,0 +1,64 @@
+
+.home.content{
+  padding: 7.5rem 2rem;
+    background: url('/img/home-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{min-height: 40rem;width: 100%;    font-family: Oswald;text-align: center}
+.nav_is_visible .content{left: -50px;}
+  .menu{    background: #001016;
+  }
+  #main-side-nav ul {
+    padding: 0px;
+  }
+  #main-side-nav ul li{border-bottom: 1px solid #dacccd;}
+  .nav_is_visible .button.close{
+      left: -30px
+  }
+  .profile-img-name{
+    text-align: center;
+  }
+  .profile-img{
+    height: 200px;
+    width: 100%;
+  }
+  .profile-img-name .caption{
+    padding: 10px;
+    background: #00a3e1;color: #fff;font-size:1.3rem;
+  }
+  .social-media{font-size: 15px}
+  .social-icons{padding: 0.5rem 0}
+  .social-icons div{
+    height: 20px;text-align: center;
+    width: 20px;margin-right: 3px;
+    background-size: cover !important;
+    border-radius: 4px;
+  }
+  .social-icons a{
+    padding: 0 !important;
+    transform: none !important;
+  }
+  .copyright span{font-size: 14px}
+  .facebook-bg{background: #4B63A2}
+  .youtube-bg{background: #FD3832}
+  .twitter-bg{background: #4EBEED}
+  .linkedin-bg{background: #158BCC}
+
+  
+  /*colors preset */
+  .main-y-color{color:#C2BC16}
+  .main-y-bg{background:#C2BC16}
+  .main-border{border: 1px solid #adaca9}
+  /* /colors preset */
+
+  /* about us */
+.section-title span:first-child{border-bottom: 2px solid #C2BC16}
+.section-title span:not(:first-child){color: #C2BC16}
+.content.aboutus{padding: 4.5rem}
+
+.backm{    min-height: 25rem;
+  width: 60%;
+  margin: auto;    margin-right: 5%;
+  border-radius: 5px;}
+  /* end */
