@@ -40,7 +40,7 @@ body{
     display:block;
     width:80%;
     height:2px;
-    background:#fff;
+    background:#c2bc16;
     margin:8px auto;
   }
   
@@ -119,7 +119,8 @@ body{
    
   .content {
     position: absolute;
-    margin: 0 auto;
+    margin: 0 auto; height: 100%;
+    overflow-y: scroll;
     padding: 3.5rem;
     font-size: 18px;
     transform: translateX(100%);
@@ -132,9 +133,8 @@ body{
   }
   
   .content  p {
-    margin-bottom: 50px;
-    line-height: 1.4;
-    font-size: 17px;
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
   
   .content .wrapper{
@@ -146,22 +146,18 @@ body{
   .home_is_visible .home .wrapper,
   .aboutus_is_visible .aboutus .wrapper,
   .clients_is_visible .clients .wrapper,
+  .resume_is_visible .resume .wrapper,
   .contactus_is_visible .contactus .wrapper{  
     transform:translateX(0);
   }
   
    
-  .home_is_visible .home, 
+  .home_is_visible .home,  .resume_is_visible .resume,
   .aboutus_is_visible .aboutus, .clients_is_visible .clients, .contactus_is_visible .contactus {   
     transform: translateX(0);
     z-index:5000;
   }
-  
-  
-  .home_is_visible .home {
-    color: white;
-    background: #ff9800;
-  }
+
   
   
   .clients_is_visible .clients {
