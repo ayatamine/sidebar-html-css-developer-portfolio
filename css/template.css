@@ -145,7 +145,7 @@ body{
   
   .home_is_visible .home .wrapper,
   .aboutus_is_visible .aboutus .wrapper,
-  .clients_is_visible .clients .wrapper,
+  .portfolio_is_visible .portfolio .wrapper,
   .resume_is_visible .resume .wrapper,
   .contactus_is_visible .contactus .wrapper{  
     transform:translateX(0);
@@ -153,17 +153,11 @@ body{
   
    
   .home_is_visible .home,  .resume_is_visible .resume,
-  .aboutus_is_visible .aboutus, .clients_is_visible .clients, .contactus_is_visible .contactus {   
+  .aboutus_is_visible .aboutus, .portfolio_is_visible .portfolio, .contactus_is_visible .contactus {   
     transform: translateX(0);
     z-index:5000;
   }
 
-  
-  
-  .clients_is_visible .clients {
-    color: white;
-    background: #ff5722;
-  }
   
   .contactus_is_visible .contactus {
     color: white;
