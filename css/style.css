@@ -1,12 +1,15 @@
 
-.home.content{
+.content > .home{
   padding: 7.5rem 2rem;color: #fff;
     background: url('/img/home-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+   /*  width: 112%;
+    transform: translateX(-2.5rem);*/
+    height: 100%; 
 }
-.content{min-height: 40rem;width: 100%;    font-family: Oswald;text-align: center}
-.nav_is_visible .content{left: -50px;}
+.content{min-height: 40rem;width: 100%;  width: calc(100% - 250px);  font-family: Oswald;text-align: center}
+
   .menu{    background: #001016;
   }
   #main-side-nav ul {
@@ -55,7 +58,7 @@
   /* about us */
 .section-title span:first-child{border-bottom: 2px solid #C2BC16}
 .section-title span:not(:first-child){color: #C2BC16}
-.content.aboutus{padding: 4.5rem}
+/* .content.aboutus{padding: 4.5rem} */
 
 .backm{    min-height: 25rem;
   border-radius: 5px;}
@@ -76,7 +79,7 @@
   .aboutus p{font-size: 0.9rem;
     line-height: 1.8;}
   #generalinfo > div{
-    background: #E9E8EE;
+    background:#f1f1f1cf; /* #E9E8EE; */ 
   }
   #generalinfo > div > h6{color: #252121}
   #generalinfo > div span{
