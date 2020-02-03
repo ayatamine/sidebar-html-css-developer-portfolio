@@ -32,27 +32,27 @@
          </div>
        </li>
       <li>
-        <a href='#' data-class='home_is_visible '>
+        <a href='#home-section' data-class='home_is_visible '>
           <i class="fa fa-home fa-lg mr-2"></i>Home
         </a>
       </li>
       <li>
-        <a href='#' data-class='aboutus_is_visible'>
+        <a href='#about-section' data-class='aboutus_is_visible'>
           <i class="fa fa-user fa-lg mr-2"></i>
           About
         </a>
       </li>
       <li>
-          <a href='#' data-class='resume_is_visible'><i class="fa fa-id-card mr-2" aria-hidden="true"></i>
+          <a href='#resume-section' data-class='resume_is_visible'><i class="fa fa-id-card mr-2" aria-hidden="true"></i>
             Resume</a>
         </li>
       <li>
-        <a href='#' data-class='portfolio_is_visible'><i class="fa fa-suitcase mr-2" aria-hidden="true"></i>
+        <a href='#portfolio-section' data-class='portfolio_is_visible'><i class="fa fa-suitcase mr-2" aria-hidden="true"></i>
 
-          Potrfolio</a>
+          Portfolio</a>
       </li>
       <li>
-        <a href='#' data-class='contactus_is_visible '><i class="fa fa-envelope mr-2"></i>Contact Us</a>
+        <a href='#contact-section' data-class='contactus_is_visible '><i class="fa fa-envelope mr-2"></i>Contact Us</a>
       </li>
       <li class="social-media pt-4 border-bottom-0">
         <div class="social-icons d-flex justify-content-center">
@@ -74,7 +74,7 @@
 <!-- content -->
 
 <div class='content  text-center'>
-  <div class="home">
+  <div class="home" id="home-section">
   <br>
   <h3>Looking for a developer ...?</h3>
    <br>
@@ -82,7 +82,7 @@
   <br>
   <h3>UI <span class="main-y-color">|</span> UX  Web developer</h3>
   </div>
-  <div class="wrapper aboutus" >
+  <div class="wrapper aboutus" id="about-section">
     <h4 class="section-title"><span >About</span> <span>Me</span></h4>
     <br><br>
     <div class="row p-5">
@@ -139,45 +139,61 @@
    <br><br>
    <div class="row text-left skills">
      <div class="col-sm-6">
+       <div>
        <div>Web development <span class="float-right">80%</span></div>
        <div class="mt-2 outer-progress main-border">
-          <div class="progress main-y-bg" style="width:80%"></div>
+          <div class="progress main-y-bg" style="width:0%" data-width="80"></div>
+       </div>
        </div>
        <!---->
+       <div>
        <div>Web design <span class="float-right" >84%</span></div>
        <div class="mt-2 outer-progress main-border">
-          <div class="progress main-y-bg" style="width:84%"></div>
+          <div class="progress main-y-bg" style="width:0%" data-width="84"></div>
+       </div>
        </div>
        <!---->
+       <div>
        <div>Mobile design <span class="float-right" >30%</span></div>
        <div class="mt-2 outer-progress main-border">
-          <div class="progress main-y-bg" style="width:30%"></div>
+          <div class="progress main-y-bg" style="width:0%" data-width="30"></div>
+       </div>
        </div>
        <!---->
+       <div>
        <div>Desktop development <span class="float-right" >53%</span></div>
        <div class="mt-2 outer-progress main-border">
-          <div class="progress main-y-bg" style="width:53%"></div>
+          <div class="progress main-y-bg" style="width:0%" data-width="53"></div>
+       </div>
        </div>
      </div>
      <div class="col-sm-6">
+        <div>
         <div>Laravel <span class="float-right" >75%</span></div>
         <div class="mt-2 outer-progress main-border">
-           <div class="progress main-y-bg" style="width:75%"></div>
+           <div class="progress main-y-bg" style="width:0%" data-width="75"></div>
+        </div>
         </div>
         <!---->
+        <div>
         <div>Node Js<span class="float-right" >60%</span></div>
         <div class="mt-2 outer-progress main-border">
-           <div class="progress main-y-bg" style="width:60%"></div>
+           <div class="progress main-y-bg" style="width:0%" data-width="60"></div>
+        </div>
         </div>
         <!---->
+        <div>
         <div>PHP & MYSQL<span class="float-right" >69%</span></div>
         <div class="mt-2 outer-progress main-border">
-           <div class="progress main-y-bg" style="width:69%"></div>
+           <div class="progress main-y-bg" style="width:0%" data-width="69"></div>
+        </div>
         </div>
         <!---->
+        <div>
         <div>Wordpress <span class="float-right" >38%</span></div>
         <div class="mt-2 outer-progress main-border">
-           <div class="progress main-y-bg" style="width:48%"></div>
+           <div class="progress main-y-bg" style="width:0%" data-width="48"></div>
+        </div>
         </div>
      </div>
    </div>
@@ -187,8 +203,8 @@
    
   </div>
   
-  <div class="wrapper resume text-left p-5">
-    <h5 class="section-title text-center"><span >My</span> <span>Resume</span></h5>
+  <div class="wrapper resume text-left p-5" id="resume-section">
+    <h4 class="section-title text-center"><span >My</span> <span>Resume</span></h4>
     <br><br>
     <div class="row">
       <div class="col-sm-6">
@@ -274,7 +290,14 @@
      <br>
      <a href="">Hire Me !</a>
   </div>
-  <div class="wrapper portfolio p-5">
+ 
+  <div class="wrapper portfolio p-5" id="portfolio-section">
+     <div class="clearfix p-3  portfolio-modal">
+       <i class="fa fa-close float-right fa-lg"></i>
+       <div>
+         <img src="img/home-img.jpg" style="width:500px;height:700px" alt="">
+       </div>
+    </div>
     <div class="clearfix pt-2">
       <h4 class="section-title"><span >My</span> <span>Protfolio</span></h4>
      <!--  <h6 class="mt-4">Meet My Awesome Work</h6> -->
@@ -286,18 +309,18 @@
         <a  class="filter-btn" id='freelance'><span>Freelance</span></a>
       </div>
       <div class="row my-shuffle-container mt-3">
-        <div class="col-sm-4 col-lg-3 mb-3 picture-item " data-groups='["design"]' data-date-created="2016-08-12" data-title="Crocodile">
+        <div class="col-md-4  mb-3 picture-item " data-groups='["design"]' data-date-created="2016-08-12" data-title="Crocodile">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="/img/p3.jpg" alt="Avatar">
+                    <img src="img/p3.jpg" alt="Avatar">
                   </div>
                   <div class="flip-card-back p-4">
                     <h6>Ecommerce dropshipping</h6> 
                     <p>design</p> 
-                    <a href="#" class="visit-work text-white">visit <i class="fa fa-external-link ml-1"></i></a>
+                    
                   
                   </div>
                 </div>
@@ -305,18 +328,18 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mb-3 picture-item " data-groups='["development"]' data-date-created="2016-06-09" data-title="Crossroads">
+        <div class="col-md-4  mb-3 picture-item " data-groups='["development"]' data-date-created="2016-06-09" data-title="Crossroads">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="/img/home-img.jpg" alt="Avatar">
+                    <img src="img/home-img.jpg" alt="Avatar">
                   </div>
                   <div class="flip-card-back p-4">
                     <h6>Ecommerce dropshipping</h6> 
                     <p>design</p> 
-                    <a href="#" class="visit-work text-white">visit <i class="fa fa-external-link ml-1"></i></a>
+                    
                   
                   </div>
                 </div>
@@ -324,18 +347,18 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mb-3 picture-item " data-groups='["freelance"]' data-date-created="2015-10-20" data-title="Central Park">
+        <div class="col-md-4  mb-3 picture-item " data-groups='["freelance"]' data-date-created="2015-10-20" data-title="Central Park">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="/img/insta1.jpg" alt="Avatar">
+                    <img src="img/insta1.jpg" alt="Avatar">
                   </div>
                   <div class="flip-card-back p-4">
                     <h6>Ecommerce dropshipping</h6> 
                     <p>design</p> 
-                    <a href="#" class="visit-work text-white">visit <i class="fa fa-external-link ml-1"></i></a>
+                    
                   
                   </div>
                 </div>
@@ -343,33 +366,32 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mb-3 picture-item " data-groups='["design"]' data-date-created="2016-08-12" data-title="Crocodile">
+        <div class="col-md-4  mb-3 picture-item " data-groups='["design"]' data-date-created="2016-08-12" data-title="Crocodile">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="/img/p3.jpg" alt="Avatar">
+                    <img src="img/p3.jpg" alt="Avatar">
                   </div>
                   <div class="flip-card-back p-4">
                     <h6>Ecommerce dropshipping</h6> 
                     <p>design</p> 
-                    <a href="#" class="visit-work text-white">visit <i class="fa fa-external-link ml-1"></i></a>
-                  
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mb-3 picture-item " data-groups='["freelance"]' data-date-created="2015-10-20" data-title="Central Park">
+        <div class="col-md-4  mb-3 picture-item " data-groups='["freelance"]' data-date-created="2015-10-20" data-title="Central Park">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <img src="https://images.unsplash.com/photo-1457364559154-aa2644600ebb?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=3d0e3e8d72fc5667fd9fbe354e80957b" alt="Looking down on central park and the surrounding builds from the Rockefellar Center" />
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-lg-3 mb-3 picture-item " data-groups='["freelance"]' data-date-created="2015-10-20" data-title="Central Park">
+        <div class="col-md-4  mb-3 picture-item " data-groups='["freelance"]' data-date-created="2015-10-20" data-title="Central Park">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner">
               <img src="https://images.unsplash.com/photo-1457364559154-aa2644600ebb?ixlib=rb-0.3.5&auto=format&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=284&h=160&fit=crop&s=3d0e3e8d72fc5667fd9fbe354e80957b" alt="Looking down on central park and the surrounding builds from the Rockefellar Center" />
@@ -378,23 +400,64 @@
         </div>
         <div class="col-1@sm my-sizer-element"></div>
       </div>
+
+     
      </div>
   </div>
 
-  <div class="wrapper">
-    <h1>Contact Us</h1>
-    <br><br><br><br>
-    <p class="text-justify">
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leo Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leo Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leo Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leoPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leoPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leoPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leo
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leo
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend %leo
-    
-    
-    
-    
-    
-    
-    </p>
+  <div class="wrapper" id="contact-section">
+    <h4 class="section-title text-center"><span >Contact</span> <span>Us</span></h4>
+    <br><br>
+    <div class="container pb-3">
+      
+      <div class="row ">
+        <div class="col-md-4 p-2">
+          <div class="media contact-info">
+            <div class="icon-cader"> 
+              <i class="fa  fa-map-marker main-y-color "></i>
+            </div>
+            
+            <div class="media-body">
+                <p>Laghmara bouda</p>
+                <p>Adrar</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <div class="icon-cader">
+              <i class="fa fa-envelope main-y-color"></i>
+            </div>
+            
+            <div class="media-body">
+                <p>Laghmara bouda</p>
+                <p>Adrar</p>
+            </div>
+          </div>
+          <div class="media contact-info main-y-color">
+            <div class="icon-cader">
+             <i class="fa fa-phone "></i> 
+            </div>
+            
+            <div class="media-body">
+                <p>+213 6687589294</p>
+                <p>+213 784587247</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 p-2">
+          <div class="contact-clean">
+            <form method="post">
+                <div class="form-group row">
+                  <div class=" col-md-6 mb-3 mb-md-0"><input class="" type="text" name="name" placeholder="Name" autofocus/></div>
+                  <div class=" col-md-6"><input class="" type="email" name="email" placeholder="Email" /></div>
+                </div>
+                <div class="form-group"><input class=" " type="text" name="subject" placeholder="Subject" /></div>
+                <div class="form-group"><textarea class="" rows="14" name="message" placeholder="Your Message Here"></textarea></div>
+                <div class="form-group text-center"><button class="btn btn-block text-white main-y-bg " type="submit">send</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
      
   </div>
    
@@ -500,7 +563,49 @@
     var custom_class = $(this).find('a').data('class');
   $('body').removeClass(custom_class);
   });
-}
+
+ }
+ /* function fillProgressbar(item,real_width){
+  
+     let initial_width=1;
+     var interval =  setInterval(function(){
+       if(initial_width >= real_width){
+         clearInterval(interval);
+         initial_width = 1;
+       }else{
+         initial_width++;
+         console.log(initial_width)
+         console.log(real_width)
+         
+         item.style.width = initial_width+"%"; 
+       }
+     },300);
+ }
+   let progressbars = document.querySelectorAll('.progress');
+  progressbars.forEach(item =>{
+   
+    real_width =Number.parseInt(item.getAttribute('data-width'));
+    console.log(real_width)
+    //fillProgressbar(item,real_width);
+  }) */
+  function animateProgressBar(el, width){
+    el.animate(
+        {width: width+'%'}, 
+        {
+            duration: 5000,
+            step: function(now, fx) {
+                if(fx.prop == 'width') {
+                  $(el).parent().parent().find('span').text((Math.round(now * 100) / 100).toFixed(1) + '%');
+                }
+            }
+        }        
+    );    
+  }
+  $('.progress').each(function(){
+    animateProgressBar($(this), $(this).data("width")) 
+  });
+ 
+ 
   
   $('.menu a').on('click',function(e){
     e.preventDefault();
@@ -514,6 +619,40 @@
   });
 });
     
+$(".menu a").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  $('.content').animate({
+    scrollTop: $(hash).offset().top
+  }, 800, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+  });
+} // End if
+});
+$(document).on('click','.filter-btn',function(){
+  $(this).addClass('active').siblings('a').removeClass('active');
+  })
+$(document).on('click','.my-shuffle-container .shuffle-item .flip-card',function(){
+   /*the outer section height */
+   //let portfolioHeight = $('#portfolio-section').css('height');
+   $('.portfolio-modal').addClass('show');//.css('height',portfolioHeight);
+});
+$(document).on('click','.portfolio-modal i.fa-close',function(){
+  $('.portfolio-modal').removeClass('show');
+});
+
+ 
 </script>
 </body>
 </html>

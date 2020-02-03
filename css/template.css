@@ -138,9 +138,9 @@ body{
     font-size: 0.9rem;
     line-height: 1.5;
   }
-  .skills{background:#f1f1f1cf}
+  .skills,#contact-section{background:#f3f3f3}
   .hire-me{color: #fff;
-    background: url('/img/home-img.jpg');
+    background: url('../img/home-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1.8rem;
@@ -154,6 +154,73 @@ body{
     .hire-me a:hover{
       background : #c2bc16
     }
+  /*the portfolio section */
+ .portfolio-modal{
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  transform: translate(-3rem, -20rem) scale(0);
+  transition-duration: 600ms;
+  /*display: none;*/
+ }
+ .portfolio-modal.show{
+   transform:translate(-3rem, -3rem) scale(1);
+
+ }
+ .portfolio-modal i.fa-close{
+   color: #c2bc16; cursor: pointer;
+ }
+
+  /*  end the portfolio section */
+
+    /* the contact section l*/
+    #contact-section .contact-info{
+      background: #fff;
+      border-radius: 1px;
+      box-shadow: 0px 1px 7px 1px #e6e0e0;
+      padding: 0.6rem 0.5rem;
+    }
+    #contact-section .contact-info{
+      margin-bottom: 0.5rem;
+     }
+   /*  @media(min-width:767px){
+      
+    } */
+    .contact-info p{
+      margin-bottom: 0;text-align: left;    font-size: 0.8rem;
+      color:rgb(56, 53, 53);;
+    }
+    .contact-info .icon-cader{
+      background: #F9F9F9;
+      padding: 0.2rem 0.7rem;
+      box-shadow: 0px 1px 3px 1px #c7c1c1;
+      margin: 3px 0.8rem 0 0;
+    }
+    #contact-section form{
+      background: #fff;
+      padding:2rem;
+    }
+    #contact-section input,#contact-section textarea{
+      background: #F9F9F9;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 1px;
+      box-shadow: 0px 1px 3px 1px #c7c1c1;
+      padding: 0.4rem;
+      border:0;outline: 0;
+    }
+    #contact-section input:focus,#contact-section textarea:focus{
+      box-shadow: 0px 1px 7px 1px #c2bc16;
+      outline: 0;
+    }
+    #contact-section ::placeholder{
+      color: rgb(56, 53, 53);font-size: 0.8rem;
+    }
+    #contact-section button[type=submit]:hover{
+     background: #d3cd29;
+    }
+
   /* .content .wrapper{
       
     transform:translateX(300%);     
