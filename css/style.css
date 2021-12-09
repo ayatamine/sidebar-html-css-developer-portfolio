@@ -1,247 +1,510 @@
-
-html {
-  scroll-behavior: smooth;
-}
-.content > .home{
-  padding: 7.5rem 2rem;color: #fff;
-    background: url('../img/home-img.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-   /*  width: 112%;
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .content>.home {
+        padding: 7.5rem 2rem;
+        color: #fff;
+        background: url('../img/home-img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*  width: 112%;
     transform: translateX(-2.5rem);*/
-    height: 100%; 
-}
-.content{min-height: 40rem;width: 100%;  width: calc(100% - 250px);  font-family: Oswald;text-align: center}
-
-  .menu{    background: #001016;
-  }
-  #main-side-nav ul {
-    padding: 0px;
-  }
-  #main-side-nav ul li{border-bottom: 1px solid #dacccd;}
-  .nav_is_visible .button.close{
-      left: -30px
-  }
-  .profile-img-name{
-    text-align: center;
-  }
-  .profile-img{
-    height: 200px;
-    width: 100%;
-  }
-  .profile-img-name .caption{
-    padding: 10px;
-    background: #00a3e1;color: #fff;font-size:1.3rem;
-  }
-  .social-media{font-size: 15px}
-  .social-icons{padding: 0.5rem 0}
-  .social-icons div{
-    height: 20px;text-align: center;
-    width: 20px;margin-right: 3px;
-    background-size: cover !important;
-    border-radius: 4px;
-  }
-  .social-icons a{
-    padding: 0 !important;
-    transform: none !important;
-  }
-  .copyright span{font-size: 14px}
-  .facebook-bg{background: #4B63A2}
-  .youtube-bg{background: #FD3832}
-  .twitter-bg{background: #4EBEED}
-  .linkedin-bg{background: #158BCC}
-
-  
-  /*colors preset */
-  .main-y-color{color:#C2BC16}
-  .main-y-bg{background:#C2BC16}
-  .main-border{border: 1px solid #adaca9}
-  /* /colors preset */
-
-  /* about us */
-.section-title span:first-child{border-bottom: 2px solid #C2BC16}
-.section-title span:not(:first-child){color: #C2BC16}
-/* .content.aboutus{padding: 4.5rem} */
-
-.backm{    min-height: 25rem;
-  border-radius: 5px;}
-  .profile-picture {
-    height: 24.5rem;
-    width: 99%;
-    float: right;
-  }
-  .profile-picture img{
-    height: 100%; width: 100%; border-radius: 5px; 
-    border-top-left-radius: 0px; border-bottom-right-radius: 0px;
-  }
-  @media(max-width:575px){
-  #profile-picture-over{
-    padding: 0;
-  }
-}
-  .aboutus p{font-size: 0.9rem;
-    line-height: 1.8;}
-  #generalinfo > div{
-    background:#f1f1f1cf; /* #E9E8EE; */ 
-  }
-  #generalinfo > div > h6{color: #252121}
-  #generalinfo > div span{
-    font-size: 0.9rem;color: #73706a;
-  }
-  .aboutus .social-icons a{
-    color: #a09c94;
-    border-radius: 50%;
-    border: 1px solid;
-    padding: 1px 7px !important;
-    outline: 0;margin-left: 5px
-  }
-  .aboutus .social-icons a:first-child{padding: 2px 11px !important;}
-  .aboutus .social-icons a:hover{color: #fff;background: #C2BC16}
-  .skills .outer-progress{border-radius: 1.5rem;margin-bottom: 1rem;}
-  .skills .progress{    height: 0.5rem;border-radius: 1.5rem;}
-  /* end */
-  /* resume */
- .resume.content .heading{padding: 8px 20px;
-  border-left: 9px solid;}
-  .resume-duration{font-size: 0.8rem !important;}
-  .resume.content i{ color: #C2BC16}
-  .resume .btn-resume,.resume .btn-send-message{
-    background: #00a3e1;    padding:0.3rem 0.4rem;border-radius: 5px;
-    margin-right:3px;color:#fff
-  }
-  .resume .btn-resume:hover,.resume .btn-send-message:hover{
-    background: #0d7aa4;
-  }
-  /*end */
-/*flip card */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  cursor: pointer;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  /* transform: rotateY(180deg); */
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.flip-card:hover .flip-card-inner .flip-card-back{
-  color: white;
-  padding-bottom: 9px;
-  bottom: -9.5rem !important;
-  height: 44%;
-  box-shadow: 0px -9rem 2rem 5px #d9d100c7;
-  /* transform: rotate(0); */
-
-}
-.flip-card:hover .flip-card-inner .flip-card-back h6{ bottom: 12rem;}
-.flip-card:hover .flip-card-inner .flip-card-back p{ bottom: 13rem;}
-.flip-card:hover .flip-card-inner .flip-card-back a{    bottom: 14.5rem;}
-  .flip-card:hover .flip-card-inner .flip-card-back a,.flip-card:hover .flip-card-inner .flip-card-back p,
-  .flip-card:hover .flip-card-inner .flip-card-back h6{position: relative;
-    animation: animate-card-text 0.8s;
-    -webkit-animation: animate-card-text 0.8s;-moz-animation: animate-card-text 0.8s;
-    -o-animation: animate-card-text 0.8s;
-  }
-@keyframes animate-card-text{
-  0%{opacity: 0;}
-  50%{opacity: 0.5;}
-  100%{opacity: 1;}
-}
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-.aspect.aspect--16x9{
-  border-radius: 10px;
-  min-height: 19rem;
-}
-.flip-card-front img{height:100%;width:100%}
-/* Style the back side */
-.flip-card-back {
-  background-color:#C2BC16;
-  color: white;    bottom: -20.5rem !important;
-  /* transform: rotateY(180deg); */
-  padding-top: 4.5rem !important;
-  transition: 0.3s;
-}
-/* .flip-card-back .visit-work{  font-size: 1rem;} */
-.flip-card-back p {
-  border: 2px solid;
-  width: fit-content;
-  padding: 0.2rem 1.5rem;
-  margin: 2rem auto;
-  border-radius: 3px;
-  box-shadow: 0 2px 11px #ffffffab;
-}
-/*endflip card */
-@media(min-width:455px) and (max-width:575px){
-  .flip-card-back {
-    bottom: -28rem !important;
-  } 
-  .picture-item{    padding: 3rem;}
-  .flip-card:hover .flip-card-inner .flip-card-back {
-    height: 45%;
-  }
-  .flip-card:hover .flip-card-inner .flip-card-back{
-    bottom: -10.5rem !important;
-    height: 52%;
-  }
-}
-
-@media(max-width:320px){
-  .aspect.aspect--16x9 {
-    min-height: 16rem;
-}
-
-}
-@media(max-width:767px){
-  .flip-card:hover .flip-card-inner .flip-card-back{
-    height: 35%;
-    padding-top: 3.5rem !important;
-  }
-  .filter-btn{    font-size: 15px;}
-}
-@media(min-width:690px) and (max-width:767px){
-  .flip-card-back {
-    bottom: -25.5rem !important;
-  }
-}
-@media(min-width:576px) and  (max-width:680px){
-  .aspect.aspect--16x9 {
-    min-height: 16rem;
-}
-.flip-card-back p {
+        height: 100%;
+    }
+    
+    .content {
+        min-height: 40rem;
+        width: 100%;
+        width: calc(100% - 250px);
+        font-family: Oswald;
+        text-align: center
+    }
+    
+    .menu {
+        background: #001016;
+        z-index: 1111;
+    }
+    
+    .menu.show {
+        width: 250px;
+        transform: translateX(0px)
+    }
+    
+    .sm-menu {
+        display: none;
+        padding: 10px;
+    }
+    
+    .sm-menu img,
+    .sm-menu h6 {
+        display: inline-block;
+    }
+    /* the menu responsivity */
+    
+    @media(max-width:920px) {
+        .menu {
+            width: 0;
+            transform: translateX(-250px);
+        }
+        .menu .profile-img-name .caption,
+        .menu a {
+            font-size: 0.9rem;
+        }
+        .menu .fa-lg {
+            font-size: 1em;
+            line-height: 0.1em;
+        }
+        .content {
+            width: 100%;
+            ;
+            transform: translateX(0);
+        }
+        .sm-menu {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            z-index: 99999;
+            width: 100%;
+        }
+    }
+    
+    .img-profile-circle img {
+        height: 35px;
+        width: 35px;
+        border: 1px solid #C2BC16;
+        margin-left: 8px;
+        border-radius: 50%;
+    }
+    /* end the menu responsivity */
+    
+    #main-side-nav ul {
+        padding: 0px;
+    }
+    
+    #main-side-nav ul li {
+        border-bottom: 1px solid #dacccd;
+    }
+    
+    .nav_is_visible .button.close {
+        left: -30px
+    }
+    
+    .profile-img-name {
+        text-align: center;
+    }
+    
+    .profile-img {
+        height: 200px;
+        object-fit: fill;
+        width: 100%;
+    }
+    
+    .profile-img-name .caption {
+        padding: 10px;
+        background: #00a3e1;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    
+    .social-media {
+        font-size: 15px
+    }
+    
+    .social-icons {
+        padding: 0.5rem 0
+    }
+    
+    .social-icons div {
+        height: 20px;
+        text-align: center;
+        width: 20px;
+        margin-right: 3px;
+        background-size: cover !important;
+        border-radius: 4px;
+    }
+    
+    .social-icons a {
+        padding: 0 !important;
+        transform: none !important;
+    }
+    
+    .copyright span {
+        font-size: 14px
+    }
+    
+    .facebook-bg {
+        background: #4B63A2
+    }
+    
+    .youtube-bg {
+        background: #FD3832
+    }
+    
+    .twitter-bg {
+        background: #4EBEED
+    }
+    
+    .linkedin-bg {
+        background: #158BCC
+    }
+    /*colors preset */
+    
+    .main-y-color {
+        color: #C2BC16
+    }
+    
+    .main-y-bg {
+        background: #C2BC16
+    }
+    
+    .main-border {
+        border: 1px solid #adaca9
+    }
+    /* /colors preset */
+    /* about us */
+    
+    .section-title span:first-child {
+        border-bottom: 2px solid #C2BC16
+    }
+    
+    .section-title span:not(:first-child) {
+        color: #C2BC16
+    }
+    /* .content.aboutus{padding: 4.5rem} */
+    
+    .backm {
+        min-height: 25rem;
+        border-radius: 5px;
+    }
+    
+    .profile-picture {
+        height: 24.5rem;
+        width: 99%;
+        float: right;
+    }
+    
+    .profile-picture img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    @media(max-width:575px) {
+        #profile-picture-over {
+            padding: 0;
+        }
+    }
+    
+    .aboutus p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    
+    #generalinfo>div {
+        background: #f1f1f1cf;
+        /* #E9E8EE; */
+    }
+    
+    #generalinfo>div>h6 {
+        color: #252121
+    }
+    
+    #generalinfo>div span {
+        font-size: 0.9rem;
+        color: #73706a;
+    }
+    
+    .aboutus .social-icons a {
+        color: #a09c94;
+        border-radius: 50%;
+        border: 1px solid;
+        padding: 1px 7px !important;
+        outline: 0;
+        margin-left: 5px
+    }
+    
+    .aboutus .social-icons a:first-child {
+        padding: 2px 11px !important;
+    }
+    
+    .aboutus .social-icons a:hover {
+        color: #fff;
+        background: #C2BC16
+    }
+    
+    .skills .outer-progress {
+        border-radius: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skills .progress {
+        height: 0.5rem;
+        border-radius: 1.5rem;
+    }
+    /* end */
+    /* resume */
+    
+    .resume.content .heading {
+        padding: 8px 20px;
+        border-left: 9px solid;
+    }
+    
+    .resume-duration {
+        font-size: 0.8rem !important;
+    }
+    
+    .resume.content i {
+        color: #C2BC16
+    }
+    
+    .resume .btn-resume,
+    .resume .btn-send-message {
+        background: #00a3e1;
+        padding: 0.3rem 0.4rem;
+        border-radius: 5px;
+        margin-right: 3px;
+        color: #fff
+    }
+    
+    .resume .btn-resume:hover,
+    .resume .btn-send-message:hover {
+        background: #0d7aa4;
+    }
+    /*end */
+    /*flip card */
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    
+    .flip-card {
+        cursor: pointer;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+    }
+    /* This container is needed to position the front and back side */
+    
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    
+    .flip-card:hover .flip-card-inner {
+        /* transform: rotateY(180deg); */
+    }
+    /* Position the front and back side */
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back {
+        color: white;
+        padding-bottom: 9px;
+        bottom: -9.5rem !important;
+        height: 44%;
+        box-shadow: 0px -9rem 2rem 5px #d9d100c7;
+        /* transform: rotate(0); */
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back .p-name {
+        bottom: 12rem;
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back .p-link {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        color: #fff;
+        transform: rotate(90deg);
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back a {
+        bottom: 14.5rem;
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back .p-name {
+        position: relative;
+        animation: slide-right 0.3s ease-in-out;
+        -webkit-animation: slide-right 0.3s ease-in-out;
+        -moz-animation: slide-right 0.5s ease-in-out;
+        -o-animation: slide-right 0.3s ease-in-out;
+    }
+    
+    @keyframes slide-right {
+        0% {
+            left: -30rem;
+        }
+        25% {
+            left: -20rem;
+        }
+        50% {
+            left: -10rem;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back .p-category {
+        bottom: 12rem;
+        animation: slide-up 0.5s ease-in-out;
+        -webkit-animation: slide-up 0.5s ease-in-out;
+        -moz-animation: slide-up 0.5s ease-in-out;
+        -o-animation: slide-up 0.5s ease-in-out;
+    }
+    
+    @keyframes slide-up {
+        0% {
+            bottom: 2rem;
+        }
+        25% {
+            bottom: 4rem;
+        }
+        50% {
+            bottom: 8rem;
+        }
+        100% {
+            bottom: 12rem;
+        }
+    }
+    
+    .flip-card:hover .flip-card-inner .flip-card-back a {
+        position: relative;
+        animation: slide-left 0.5s ease-in-out;
+        -webkit-animation: slide-left 0.5s ease-in-out;
+        -moz-animation: slide-left 0.5s ease-in-out;
+        -o-animation: slide-left 0.5s ease-in-out;
+    }
+    
+    @keyframes slide-left {
+        0% {
+            right: -30rem;
+        }
+        25% {
+            right: -20rem;
+        }
+        50% {
+            right: -10rem;
+        }
+        100% {
+            right: 0;
+        }
+    }
+    /* Style the front side (fallback if image is missing) */
+    
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    .aspect.aspect--16x9 {
+        border-radius: 10px;
+        min-height: 20rem;
+    }
+    
+    .flip-card-front img {
+        height: 100%;
+        width: 100%
+    }
+    /* Style the back side */
+    
+    .flip-card-back {
+        background-color: #C2BC16;
+        color: white;
+        bottom: -20.5rem !important;
+        /* transform: rotateY(180deg); */
+        padding-top: 4.5rem !important;
+        transition: 0.3s;
+    }
+    /* .flip-card-back .visit-work{  font-size: 1rem;} */
+    
+    .flip-card-back .p-category {
+        border: 2px solid;
+        width: fit-content;
+        padding: 0.2rem 1.5rem;
+        margin: 1rem auto;
+        border-radius: 3px;
+        box-shadow: 0 2px 11px #ffffffab;
+        position: relative;
+        /* bottom: 12rem; */
+    }
+    /*endflip card */
+    
+    @media(min-width:455px) and (max-width:575px) {
+        .flip-card-back {
+            bottom: -28rem !important;
+        }
+        .picture-item {
+            padding: 3rem;
+            margin-bottom: 0 !important;
+        }
+        .flip-card:hover .flip-card-inner .flip-card-back {
+            height: 45%;
+        }
+        .flip-card:hover .flip-card-inner .flip-card-back {
+            bottom: -10.5rem !important;
+            height: 52%;
+        }
+    }
+    
+    @media(max-width:320px) {
+        .aspect.aspect--16x9 {
+            min-height: 16rem;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .flip-card:hover .flip-card-inner .flip-card-back {
+            height: 35%;
+            padding-top: 3.5rem !important;
+        }
+        .filter-btn {
+            font-size: 15px;
+        }
+    }
+    
+    @media(min-width:690px) and (max-width:767px) {
+        .flip-card-back {
+            bottom: -25.5rem !important;
+        }
+    }
+    
+    @media(min-width:576px) and (max-width:680px) {
+        .aspect.aspect--16x9 {
+            min-height: 16rem;
+        }
+        /* .flip-card-back p {
   padding: 0.1rem 0.6rem;
   margin: 1.5rem auto;
-}
-.flip-card-back p,.flip-card-back a{
-  font-size: 14px;
-}
-.flip-card-back h6{
-  font-size: 15px;
-}
-}
+} */
+        .flip-card-back .p-category,
+        .flip-card-back a {
+            font-size: 14px;
+        }
+        .flip-card-back .p-name {
+            font-size: 15px;
+        }
+    }
+    
+    @media(min-width:921px) and (max-width:1020px) {
+        .flip-card-back .p-category,
+        .flip-card-back .p-name {
+            font-size: 0.8rem;
+        }
+    }
